@@ -1,8 +1,12 @@
 param (
-    $BinPath = "C:\CommunicationDeviceSwitcherService",
+    $BinPath = "",
     $Startup = "Automatic",
     $ExeName = "\CommunicationDeviceSwitcherService.exe"
 )
+
+if ([string]::IsNullOrEmpty($BinPath)){
+    $BinPath = Get-Location
+}
 
 $params = @{
     Name = "CommunicationAudioAutoSwitchService"
