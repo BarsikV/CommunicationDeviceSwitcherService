@@ -13,6 +13,18 @@
 "SccProvider" = "8:"
     "Hierarchy"
     {
+        "Entry"
+        {
+        "MsmKey" = "8:_2483BADDF388496D9ABCBF8A8A9E6926"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_60DAEE90C09E446E8D382598006DA942"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -31,6 +43,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -61,6 +89,21 @@
                     "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
                     "ProductCode" = "8:.NETFramework,Version=v4.7.2"
                     }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.CoreRuntime.3.1.x64"
+                    {
+                    "Name" = "8:.NET Core Runtime 3.1.14 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.CoreRuntime.3.1.x64"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.CoreRuntime.3.1.x86"
+                    {
+                    "Name" = "8:.NET Core Runtime 3.1.14 (x86)"
+                    "ProductCode" = "8:Microsoft.NetCore.CoreRuntime.3.1.x86"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.DesktopRuntime.3.1.x64"
+                    {
+                    "Name" = "8:.NET Desktop Runtime 3.1.14 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.DesktopRuntime.3.1.x64"
+                    }
                     "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.DesktopRuntime.3.1.x86"
                     {
                     "Name" = "8:.NET Desktop Runtime 3.1.14 (x86)"
@@ -74,59 +117,59 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_09BDB799554141A8A60CBE0826173312"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_0EC363C3088845688918321C2AD0AF95"
             {
-            "Name" = "8:Publish Items from CommunicationDeviceSwitcherService (Release Any CPU)"
+            "Name" = "8:Publish Items from CommunicationDeviceSwitcherService (Active)"
             "Condition" = "8:"
-            "Object" = "8:_EA122215A35B421A93170A335891BA08"
-            "FileType" = "3:2"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:/Install"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_28E87D21_295C_45D2_91BE_A1E2B0A5AE4E"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_128153B3D48949C0A7A003C708A4A275"
-            {
-            "Name" = "8:Publish Items from CommunicationDeviceSwitcherService (Release Any CPU)"
-            "Condition" = "8:"
-            "Object" = "8:_EA122215A35B421A93170A335891BA08"
-            "FileType" = "3:2"
-            "InstallAction" = "3:4"
-            "Arguments" = "8:/Uninstall"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_4CD20EBE_A7A6_45D6_AA07_F055595B778A"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_12D9F83C369D457E822B5D0E92CBF8F8"
-            {
-            "Name" = "8:Publish Items from CommunicationDeviceSwitcherService (Release Any CPU)"
-            "Condition" = "8:"
-            "Object" = "8:_EA122215A35B421A93170A335891BA08"
-            "FileType" = "3:2"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:/Commit"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_AD537F89_6AD3_41F6_9E28_0ABC9F0AA921"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_86AC60BF59684515BEF312D8ABB41105"
-            {
-            "Name" = "8:Publish Items from CommunicationDeviceSwitcherService (Release Any CPU)"
-            "Condition" = "8:"
-            "Object" = "8:_EA122215A35B421A93170A335891BA08"
+            "Object" = "8:_2483BADDF388496D9ABCBF8A8A9E6926"
             "FileType" = "3:2"
             "InstallAction" = "3:3"
             "Arguments" = "8:/Rollback"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_DD475008_4DB6_453C_8D13_2979766DAB2D"
+            "Identifier" = "8:_E2F78A31_A2C9_4A4E_8962_013CA12945B0"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_B0B4211F3EF54322B50F6F3F112A1064"
+            {
+            "Name" = "8:Publish Items from CommunicationDeviceSwitcherService (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_2483BADDF388496D9ABCBF8A8A9E6926"
+            "FileType" = "3:2"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:/Commit"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_7103E76B_DE1E_436D_8FBB_91EB07824143"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_D71EB144CB004E28BFC3F885BCF48F6F"
+            {
+            "Name" = "8:Publish Items from CommunicationDeviceSwitcherService (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_2483BADDF388496D9ABCBF8A8A9E6926"
+            "FileType" = "3:2"
+            "InstallAction" = "3:4"
+            "Arguments" = "8:/Uninstall"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_67766FF9_ACA4_48BD_BF7C_5F3231037FA7"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_F9AA64D65C7E4F2084DC41C934859541"
+            {
+            "Name" = "8:PublishItemsOutputGroup from CommunicationDeviceSwitcherService (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_60DAEE90C09E446E8D382598006DA942"
+            "FileType" = "3:2"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:/Install"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_0CD7A344_5DD0_4F4A_ABF6_A959FB133157"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
@@ -212,7 +255,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:CommunicationDeviceSwitcherInstaller"
         "ProductCode" = "8:{51797EA1-0E36-4ECB-842E-EA385ECDD826}"
-        "PackageCode" = "8:{F1BDF499-B126-4648-AB12-547D37CC67B7}"
+        "PackageCode" = "8:{91089AF4-4685-4E09-9308-F5F44D70FB76}"
         "UpgradeCode" = "8:{535174FF-AB5A-4BCD-99BC-D50ED2032641}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -731,9 +774,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EA122215A35B421A93170A335891BA08"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2483BADDF388496D9ABCBF8A8A9E6926"
             {
-            "SourcePath" = "8:..\\CommunicationDeviceSwitcherService\\obj\\Release\\netcoreapp3.1\\apphost.exe"
+            "SourcePath" = "8:..\\CommunicationDeviceSwitcherService\\obj\\Debug\\netcoreapp3.1\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_400DFA88EB2945E7811FA2DCFC7E3B85"
@@ -751,8 +794,36 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:PublishItems"
+            "OutputProjectGuid" = "8:{8784C49B-8535-4B86-9C0C-F6D6DE18CB05}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_60DAEE90C09E446E8D382598006DA942"
+            {
+            "SourcePath" = "8:..\\CommunicationDeviceSwitcherService\\obj\\Debug\\netcoreapp3.1\\apphost.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_400DFA88EB2945E7811FA2DCFC7E3B85"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:PublishItemsOutputGroup"
             "OutputProjectGuid" = "8:{8784C49B-8535-4B86-9C0C-F6D6DE18CB05}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"

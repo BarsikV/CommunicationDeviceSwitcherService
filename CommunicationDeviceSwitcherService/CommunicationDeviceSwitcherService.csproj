@@ -12,4 +12,8 @@
     <PackageReference Include="System.Management" Version="5.0.0" />
     <PackageReference Include="TopShelf.ServiceInstaller" Version="4.3.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommunicationDeviceSwitcherService.ApplicationServices\CommunicationDeviceSwitcherService.ApplicationServices.csproj" />
+  </ItemGroup>
 </Project>

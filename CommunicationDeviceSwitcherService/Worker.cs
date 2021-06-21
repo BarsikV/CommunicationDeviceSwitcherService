@@ -1,5 +1,5 @@
-using CommunicationDeviceSwitcherService.CoreAudioApi;
-using CommunicationDeviceSwitcherService.CoreAudioApi.Interfaces;
+using CommunicationDeviceSwitcherService.ApplicationServices;
+using CommunicationDeviceSwitcherService.ApplicationServices.CoreAudioApi.Interfaces;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -51,8 +51,7 @@ namespace CommunicationDeviceSwitcherService
 
         private void RegisterNotificationClient()
         {
-            var devEnm = new MMDeviceEnumerator();
-            devEnm.RegisterEndpointNotificationCallback(_notificationClient);
+            CoreAudioApplicationService.RegisterCallback(_notificationClient);
         }
     }
 }

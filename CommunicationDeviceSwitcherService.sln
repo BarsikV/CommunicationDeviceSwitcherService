@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunicationDeviceSwitcher
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CommunicationDeviceSwitcherInstaller", "CommunicationDeviceSwitcherInstaller\CommunicationDeviceSwitcherInstaller.vdproj", "{C1F6FCFB-8520-4364-8913-A6CAAD818AA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationDeviceSwitcherService.Netframework", "CommunicationDeviceSwitcherService.Netframework\CommunicationDeviceSwitcherService.Netframework.csproj", "{0EB58526-530B-4570-9E50-9046B0FD74E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationDeviceSwitcherService.ApplicationServices", "CommunicationDeviceSwitcherService.ApplicationServices\CommunicationDeviceSwitcherService.ApplicationServices.csproj", "{420B10C4-D89B-4F5D-ACC2-E5D9971D0587}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{8784C49B-8535-4B86-9C0C-F6D6DE18CB05}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C1F6FCFB-8520-4364-8913-A6CAAD818AA6}.Debug|Any CPU.ActiveCfg = Debug
 		{C1F6FCFB-8520-4364-8913-A6CAAD818AA6}.Release|Any CPU.ActiveCfg = Release
+		{0EB58526-530B-4570-9E50-9046B0FD74E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB58526-530B-4570-9E50-9046B0FD74E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB58526-530B-4570-9E50-9046B0FD74E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB58526-530B-4570-9E50-9046B0FD74E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{420B10C4-D89B-4F5D-ACC2-E5D9971D0587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420B10C4-D89B-4F5D-ACC2-E5D9971D0587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420B10C4-D89B-4F5D-ACC2-E5D9971D0587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420B10C4-D89B-4F5D-ACC2-E5D9971D0587}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
