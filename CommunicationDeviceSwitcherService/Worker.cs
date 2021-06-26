@@ -10,7 +10,7 @@ namespace CommunicationDeviceSwitcherService
 {
     public class Worker : BackgroundService
     {
-        private static ILogger<Worker> _logger;
+        private ILogger<Worker> _logger;
         private readonly IMMNotificationClient _notificationClient;
 
         public Worker(ILogger<Worker> logger, IMMNotificationClient notificationClient)
@@ -33,12 +33,12 @@ namespace CommunicationDeviceSwitcherService
             return base.StartAsync(cancellationToken);
         }
 
-        private static void OnProcessExit(object sender, EventArgs e)
+        private void OnProcessExit(object sender, EventArgs e)
         {
             _logger?.LogInformation("Communication Auto Switcher has exited");            
         }
 
-        private static void UnhandledExceptionLog(object sender, UnhandledExceptionEventArgs e)
+        private void UnhandledExceptionLog(object sender, UnhandledExceptionEventArgs e)
         {
             _logger?.LogError(e.ToString());
         }

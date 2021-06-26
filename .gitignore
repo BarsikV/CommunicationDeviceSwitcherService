@@ -5,3 +5,5 @@ bin
 obj
 packages
 .vs/
+CommunicationDeviceSwitcher.Installer.Netframework/Debug
+CommunicationDeviceSwitcher.Installer.Netframework/Release
