@@ -25,6 +25,12 @@ namespace CommunicationDeviceSwitcherService.ApplicationServices
                     var deviceId = defaultDeviceId;
                     _policyConfig.SetDefaultEndpoint(deviceId, Role.Communications);
                 }
+                else if (dataFlow == DataFlow.Capture && deviceRole == Role.Multimedia)
+                {
+                    var deviceId = defaultDeviceId;
+                    _policyConfig.SetDefaultEndpoint(deviceId, Role.Communications);
+                }
+
             }
             catch (Exception ex)
             {
