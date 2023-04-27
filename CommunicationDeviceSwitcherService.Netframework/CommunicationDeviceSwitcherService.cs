@@ -8,16 +8,15 @@ namespace CommunicationDeviceSwitcherService.Netframework
 {
     public partial class CommunicationDeviceSwitcherService : ServiceBase
     {
-        private LoggerFactory _loggerFactory;
-        private ILogger<CommunicationDeviceSwitcherService> _logger;
-        private IMMNotificationClient _notificationClient;
+        private readonly ILogger<CommunicationDeviceSwitcherService> _logger;
+        private readonly IMMNotificationClient _notificationClient;
 
         public CommunicationDeviceSwitcherService()
         {
-            _loggerFactory = new LoggerFactory();
-            _logger = _loggerFactory.CreateLogger<CommunicationDeviceSwitcherService>();
-            var logger = _loggerFactory.CreateLogger<DefaultCommunicateDeviceSwitchNotificationClient>();
-            _notificationClient = new DefaultCommunicateDeviceSwitchNotificationClient(logger);
+            var loggerFactory = new LoggerFactory();
+            _logger = loggerFactory.CreateLogger<CommunicationDeviceSwitcherService>();
+            var logger = loggerFactory.CreateLogger<DefaultCommunicateDeviceSwitchNotificationClient>();
+            _notificationClient = new DefaultCommunicateDeviceSwitchNotificationClient(logger, new SettingsProvider());
             InitializeComponent();
         }
 

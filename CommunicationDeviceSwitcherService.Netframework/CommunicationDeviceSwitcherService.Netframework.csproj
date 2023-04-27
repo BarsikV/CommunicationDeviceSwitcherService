@@ -103,6 +103,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SettingsProvider.cs" />
     <Compile Include="CommunicationDeviceSwitcherService.cs">
       <SubType>Component</SubType>
     </Compile>
