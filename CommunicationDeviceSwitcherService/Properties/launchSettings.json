@@ -1,7 +1,8 @@
-﻿{
+{
   "profiles": {
     "CommunicationDeviceSwitcherService": {
       "commandName": "Project",
+      "commandLineArgs": "/Install",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
       }

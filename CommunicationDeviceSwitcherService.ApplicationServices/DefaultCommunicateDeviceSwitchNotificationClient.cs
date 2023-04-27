@@ -3,32 +3,36 @@ using CommunicationDeviceSwitcherService.ApplicationServices.CoreAudioApi.Interf
 using Microsoft.Extensions.Logging;
 using System;
 using System.Runtime.InteropServices;
+using Microsoft.Extensions.Options;
 
 namespace CommunicationDeviceSwitcherService.ApplicationServices
 {
     public class DefaultCommunicateDeviceSwitchNotificationClient : IMMNotificationClient
     {
-        public DefaultCommunicateDeviceSwitchNotificationClient(ILogger<DefaultCommunicateDeviceSwitchNotificationClient> logger)
+        public DefaultCommunicateDeviceSwitchNotificationClient(ILogger<DefaultCommunicateDeviceSwitchNotificationClient> logger, ISettingsProvider settingsProvider)
         {
             _logger = logger;
+            _settingsProvider = settingsProvider;
         }
 
         private static readonly PolicyConfigClient _policyConfig = new PolicyConfigClient();
         private readonly ILogger<DefaultCommunicateDeviceSwitchNotificationClient> _logger;
+        private readonly ISettingsProvider _settingsProvider;
 
         public void OnDefaultDeviceChanged([MarshalAs(UnmanagedType.I4)] DataFlow dataFlow, [MarshalAs(UnmanagedType.I4)] Role deviceRole, [MarshalAs(UnmanagedType.LPWStr)] string defaultDeviceId)
         {
             try
             {
-                if (dataFlow == DataFlow.Render && deviceRole == Role.Multimedia)
+                var switchInputEnabled = _settingsProvider.IsSwitchInputDeviceEnabled();
+                var switchOutputEnabled = _settingsProvider.IsSwitchOutputDeviceEnabled();
+
+                if (switchOutputEnabled && dataFlow == DataFlow.Render && deviceRole == Role.Multimedia)
                 {
-                    var deviceId = defaultDeviceId;
-                    _policyConfig.SetDefaultEndpoint(deviceId, Role.Communications);
+                    _policyConfig.SetDefaultEndpoint(defaultDeviceId, Role.Communications);
                 }
-                else if (dataFlow == DataFlow.Capture && deviceRole == Role.Multimedia)
+                else if (switchInputEnabled && dataFlow == DataFlow.Capture && deviceRole == Role.Multimedia)
                 {
-                    var deviceId = defaultDeviceId;
-                    _policyConfig.SetDefaultEndpoint(deviceId, Role.Communications);
+                    _policyConfig.SetDefaultEndpoint(defaultDeviceId, Role.Communications);
                 }
 
             }
