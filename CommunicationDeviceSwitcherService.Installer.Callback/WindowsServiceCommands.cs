@@ -1,7 +1,6 @@
 ﻿using CliWrap;
-using System.Threading.Tasks;
 
-namespace CommunicationDeviceSwitcherService
+namespace CommunicationDeviceSwitcherService.Installer.Callback
 {
     internal class WindowsServiceCommands
     {
@@ -18,6 +17,14 @@ namespace CommunicationDeviceSwitcherService
                 .WithArguments(new[] { CreateCommand, serviceName, $"binPath={executablePath}", "start=auto" })
                 .ExecuteAsync();
         }
+        
+        public static async Task Start(string serviceName)
+        {
+            var res = await Cli.Wrap(ServiceControlCommand)
+                .WithArguments(new[] { StartCommand, serviceName })
+                .WithValidation(CommandResultValidation.None)
+                .ExecuteAsync();
+        }
 
         public static async Task Stop(string serviceName)
         {
@@ -31,14 +38,6 @@ namespace CommunicationDeviceSwitcherService
         {
             var res = await Cli.Wrap(ServiceControlCommand)
                 .WithArguments(new[] { DeleteCommand, serviceName })
-                .WithValidation(CommandResultValidation.None)
-                .ExecuteAsync();
-        }
-
-        public static async Task Start(string serviceName)
-        {
-            var res = await Cli.Wrap(ServiceControlCommand)
-                .WithArguments(new[] { StartCommand, serviceName })
                 .WithValidation(CommandResultValidation.None)
                 .ExecuteAsync();
         }

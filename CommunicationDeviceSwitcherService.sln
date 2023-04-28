@@ -13,6 +13,8 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CommunicationDeviceSwitcher
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CommunicationDeviceSwitcherService.Installer", "CommunicationDeviceSwitcherService.Installer\CommunicationDeviceSwitcherService.Installer.vdproj", "{3259133A-3E0A-4F64-9B91-7C960C45C580}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationDeviceSwitcherService.Installer.Callback", "CommunicationDeviceSwitcherService.Installer.Callback\CommunicationDeviceSwitcherService.Installer.Callback.csproj", "{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{B1B4A085-A75D-4EF6-B0B2-91D1A0CC8599}.Release|Any CPU.ActiveCfg = Release
 		{3259133A-3E0A-4F64-9B91-7C960C45C580}.Debug|Any CPU.ActiveCfg = Debug
 		{3259133A-3E0A-4F64-9B91-7C960C45C580}.Release|Any CPU.ActiveCfg = Release
+		{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
