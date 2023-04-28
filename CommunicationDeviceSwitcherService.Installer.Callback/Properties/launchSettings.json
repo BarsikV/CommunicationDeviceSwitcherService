@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CommunicationDeviceSwitcherService.Installer.Callback": {
+      "commandName": "Project",
+      "commandLineArgs": "/Uninstall"
+    }
+  }
+}
