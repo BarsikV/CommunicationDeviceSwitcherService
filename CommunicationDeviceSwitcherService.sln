@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunicationDeviceSwitcherService", "CommunicationDeviceSwitcherService\CommunicationDeviceSwitcherService.csproj", "{8784C49B-8535-4B86-9C0C-F6D6DE18CB05}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunicationDeviceSwitcherService.ApplicationServices", "CommunicationDeviceSwitcherService.ApplicationServices\CommunicationDeviceSwitcherService.ApplicationServices.csproj", "{420B10C4-D89B-4F5D-ACC2-E5D9971D0587}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CommunicationDeviceSwitcher.Installer.Netframework", "CommunicationDeviceSwitcher.Installer.Netframework\CommunicationDeviceSwitcher.Installer.Netframework.vdproj", "{B1B4A085-A75D-4EF6-B0B2-91D1A0CC8599}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CommunicationDeviceSwitcherService.Installer", "CommunicationDeviceSwitcherService.Installer\CommunicationDeviceSwitcherService.Installer.vdproj", "{3259133A-3E0A-4F64-9B91-7C960C45C580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationDeviceSwitcherService.Installer.Callback", "CommunicationDeviceSwitcherService.Installer.Callback\CommunicationDeviceSwitcherService.Installer.Callback.csproj", "{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,12 @@ Global
 		{420B10C4-D89B-4F5D-ACC2-E5D9971D0587}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B1B4A085-A75D-4EF6-B0B2-91D1A0CC8599}.Debug|Any CPU.ActiveCfg = Debug
 		{B1B4A085-A75D-4EF6-B0B2-91D1A0CC8599}.Release|Any CPU.ActiveCfg = Release
+		{3259133A-3E0A-4F64-9B91-7C960C45C580}.Debug|Any CPU.ActiveCfg = Debug
+		{3259133A-3E0A-4F64-9B91-7C960C45C580}.Release|Any CPU.ActiveCfg = Release
+		{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80F542A-3BDF-47B9-BC75-263E5C2B6D96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
